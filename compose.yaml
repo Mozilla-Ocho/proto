@@ -1,0 +1,60 @@
+version: '3'
+
+services:
+
+  appserver:
+    build:
+      context: '.'
+      dockerfile: dockerfiles/appserver
+      target: appserver_dev
+    networks:
+      - allhosts
+    volumes:
+      - ./appserver:/appserver
+    working_dir: /appserver
+    command: yarn dev
+    env_file: env-dev
+    environment:
+      PORT: 3000
+      DATABASE_URL: "postgresql://devuser:devdummypass@pgserver:5432/devdb"
+    ports:
+      - "3000:3000"
+    depends_on:
+      pgserver:
+        condition: service_healthy
+
+  pgserver:
+    image: "postgres:14"
+    networks:
+      - allhosts
+    environment:
+      POSTGRES_USER: devuser
+      POSTGRES_DB: devdb
+      POSTGRES_PASSWORD: devdummypass
+    ports:
+      - '5432:5432'
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U devuser -d devdb"]
+      interval: 4s
+      timeout: 4s
+      retries: 20
+
+  mitmweb:
+    build:
+      context: '.'
+      dockerfile: dockerfiles/mitmweb
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    environment:
+      UPSTREAM: http://appserver:3000/
+    networks:
+      - allhosts
+
+networks:
+  allhosts:
+
+volumes:
+  dbdata:
