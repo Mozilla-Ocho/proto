@@ -11,17 +11,17 @@ export default function Home({ dbResult }: { dbResult: string }) {
   );
 }
 
-export async function getServerSideProps() {
-  let dbResult;
-  if (process.env.FLAG_USE_DB === "true") {
-    try {
-      dbResult = await knex('dummy_records').first();
-      dbResult = dbResult ? JSON.stringify(dbResult) : 'no rows found';
-    } catch (e: unknown) {
-      dbResult = `db error: ${String(e)}`;
-    }
-  } else {
-    dbResult = "FLAG_USE_DB is false";
-  }
-  return { props: { dbResult } };
-}
+// export async function getServerSideProps() {
+//   let dbResult;
+//   if (process.env.FLAG_USE_DB === "true") {
+//     try {
+//       dbResult = await knex('dummy_records').first();
+//       dbResult = dbResult ? JSON.stringify(dbResult) : 'no rows found';
+//     } catch (e: unknown) {
+//       dbResult = `db error: ${String(e)}`;
+//     }
+//   } else {
+//     dbResult = "FLAG_USE_DB is false";
+//   }
+//   return { props: { dbResult } };
+// }
