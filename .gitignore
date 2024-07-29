@@ -7,7 +7,8 @@ node_modules
 .vscode
 *.swp
 *.swo
-.env
+# local env files
+.env*.local
 
 # credentials
 .*.json
