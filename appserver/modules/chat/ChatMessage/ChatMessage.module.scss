@@ -1,0 +1,57 @@
+@use 'styles/core/boilerplate' as *;
+
+.out_going_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+  color: $color-text-main;
+
+  .message {
+    background-color: $color-background-chat-outgoing;
+  }
+}
+
+.incomming_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+  color: $color-text-reverse;
+
+  .message {
+    background-color: $color-background-chat-incomming;
+    --copy-button-text-color: $color-text-reverse;
+  }
+}
+
+.container {
+  max-width: 80%;
+  position: relative;
+}
+
+.name_tag {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.message {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.actions {
+  display: flex;
+  position: absolute;
+  bottom: -40px;
+  right: 0px;
+}
+
+.copy_button {
+  svg {
+    stroke: $color-text-reverse;
+  }
+}

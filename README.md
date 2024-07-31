@@ -1,23 +1,53 @@
-# Innovation Studio boilerplate app template
+# PROTO 
 
-This boilerplate repo is still under heavy initial development. We are
-exercising the process of rapidly spinning up a reproducible application stack,
-see doc/system-archictecture.png for the current architecture.
+This is a prototype repo for team Bosque (name can potentially change).
 
-Goals:
-- Minimize technical effort that isn't germane to the ideas we want to test
-  - Select and develop tools we like as a team and commit to reusing them
-  - All pods benefit from other pod contributions to the boilerplate
-  - Re-use effort and learnings from Graceland’s stack
-  - Quick to spin up for simple demos/prototypes
-  - Encourage sharing dev effort and cross-contribution across pods with
-    normalized conventions
-- Serve also as a solid foundation for production MVPs and eventual GA releases
-  - Moco-friendly stack: GCP-based, built on best practices with generic
-    primitives, not reliant on third parties (e.g. heroku)
-  - Flexible, minimal, modular architecture that can replace or include new
-    components as needed (alternate backends, cloud functions, A/B testing,
-    CDNs, etc)
-- Innovation Studio is the first customer, but this might provide value in Moz
-  more broadly and/or as open source project.
+## Getting started
 
+```bash
+docker compose up --build
+```
+
+or if already built
+
+```bash
+docker compose up  
+```
+
+## Getting latest database changes
+
+```bash
+docker compose exec -it appserver yarn knex migrate:latest
+```
+
+## Installing new packages
+
+```bash
+docker compose exec -it appserver yarn install
+```
+
+ 
+## ENV Vars
+
+Auth0: Creating scafolding but not in use
+
+```bash
+AUTH0_SECRET= 
+AUTH0_CLIENT_ID= 
+AUTH0_ISSUER_BASE_URL= 
+AUTH0_CLIENT_SECRET= 
+AUTH0_BASE_URL='http://localhost:3000'
+```
+
+Github: Not currently in use
+
+```bash
+GITHUB_TOKEN=
+```
+
+OpenAI: Needed to for any AI interaciton
+
+```bash
+OPENAI_API_KEY= 
+ASSISTANT_ID= 
+```

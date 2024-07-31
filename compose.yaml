@@ -13,7 +13,7 @@ services:
       - ./appserver:/appserver
     working_dir: /appserver
     command: yarn dev
-    env_file: env-dev
+    env_file: .env.local
     environment:
       PORT: 3000
       DATABASE_URL: "postgresql://devuser:devdummypass@pgserver:5432/devdb"
@@ -24,7 +24,7 @@ services:
         condition: service_healthy
 
   pgserver:
-    image: "postgres:14"
+    image: pgvector/pgvector:pg14
     networks:
       - allhosts
     environment:

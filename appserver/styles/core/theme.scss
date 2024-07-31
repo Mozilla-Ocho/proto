@@ -1,0 +1,204 @@
+:root {
+  --font-primary: var(--inter-font);
+  --font-seondary: var(--space_grotesk-font);
+  --font-secondary: var(--space_grotesk-font);
+
+  /**
+  BUTTON
+  **/
+  --button-font-size: 0.875rem;
+  --button-font-weight: 500;
+  --button-border-radius: 20px;
+  --button-border-stroke: 2px;
+  --button-padding-large: 12px 18px;
+  --button-padding-large-round: 12px;
+  --button-padding-medium: 8px 16px;
+  --button-padding-medium-round: 8px;
+  --button-padding-small: 6px 12px;
+  --button-padding-small-round: 6px;
+
+  /**
+  COPY BUTTON
+  **/
+  --copy-button-font-size: 0.875rem;
+  --copy-button-font-weight: 500;
+  --copy-button-text-color: var(--color-text-main);
+
+  /**
+  CHECKBOX
+  **/
+  --checkbox-label-font-size: 0.875rem;
+  --checkbox-label-font-weight: 500;
+
+  /**
+  INPUTS
+  **/
+  --input-label-font-size: 0.875rem;
+  --input-label-font-weight: 600;
+  --input-font-size: 0.875rem;
+  --input-info-font-size: 0.875rem;
+  --input-border-radius: 4px;
+  --input-padding: 12px;
+
+  /**
+  DROPDOWN
+  **/
+  --dropdown-margin-top: 12px;
+  --dropdown-border-radius: 4px;
+
+  /**
+  BADGE
+  **/
+  --badge-font-size: 0.875rem;
+  --badge-font-weight: 500;
+  --badge-padding: 5px 12px;
+  --badge-border-radius: 56px;
+  --badge-line-height: 26px;
+  --badge-line-height: 26px;
+
+  /**
+  RADIO
+  **/
+  --radio-label-font-size: 0.875rem;
+  --radio-label-font-weight: 500;
+
+  /**
+  SWITCH
+  **/
+  --switch-font-weight: 500;
+
+  /**
+  TOOLTIP
+  **/
+  --tooltip-font-size: 0.875rem;
+  --tooltip-font-weight: 500;
+  --tooltip-width: 250px;
+}
+
+:root {
+  --font-primary: var(--inter-font);
+  --font-seondary: var(--space_grotesk-font);
+  --font-secondary: var(--space_grotesk-font);
+  /**
+  BRAND COLORS
+  **/
+  --color-brand-1: #5b40ae;
+  --color-brand-2: #383838;
+
+  /**
+  PRIMARY INTERACTION
+  **/
+  --color-interaction-primary: #1969a6;
+  --color-interaction-primary-hover: #170696;
+  --color-interaction-primary-active: #170696;
+  --color-interaction-primary-disabled: rgba(176, 176, 176, 0.5);
+  --color-interaction-primary-alt: #ffffff;
+  --color-interaction-primary-alt-hover: #e8effd;
+  --color-interaction-primary-alt-active: #cbd8f0;
+  --color-interaction-primary-alt-disabled: #e7e7e7;
+
+  /**
+  SECONDARY INTERACTION
+  **/
+  --color-interaction-secondary: #ffffff;
+  --color-interaction-secondary-hover: #d3d3d3;
+  --color-interaction-secondary-active: #ccccd1;
+  --color-interaction-secondary-disabled: rgba(176, 176, 176, 0.5);
+  --color-interaction-secondary-alt: #ffffff;
+  --color-interaction-secondary-alt-hover: #e8e8e8;
+  --color-interaction-secondary-alt-active: #d9d9d9;
+  --color-interaction-secondary-alt-disabled: #e7e7e7;
+
+  /**
+  SEMANTIC
+  **/
+  --color-semantic-info: #0073bd;
+  --color-semantic-info-hover: #1c84cc;
+  --color-semantic-info-active: #3895d8;
+  --color-semantic-disabled: #6f6f6f;
+  --color-semantic-success: #009465;
+  --color-semantic-success-hover: #229a60;
+  --color-semantic-success-active: #39ab74;
+  --color-semantic-success-disabled: #767676;
+  --color-semantic-warning: #a86500;
+  --color-semantic-warning-hover: #b8771c;
+  --color-semantic-warning-active: #c78938;
+  --color-semantic-warning-disabled: #747474;
+  --color-semantic-critical: #d32947;
+  --color-semantic-critical-hover: #de3a57;
+  --color-semantic-critical-active: #e84d68;
+  --color-semantic-critical-disabled: #6e6e6e;
+  --color-semantic-critical-bg-alt: #f9e1e5;
+  --color-semantic-neutral: #222222;
+  --color-semantic-neutral-hover: #3a3a3a;
+  --color-semantic-neutral-active: #535353;
+  --color-semantic-neutral-inactive: #6e6e6e;
+
+  /**
+  TEXT
+  **/
+  --color-text-main: #000000;
+  --color-text-subtle: #757575;
+  --color-text-reverse: #ffffff;
+  --color-text-reverse-subtle: #e7e7e7;
+  --color-text-disabled: #b0b0b0;
+  --color-text-info: #000000;
+  --color-text-success: #000000;
+  --color-text-warning: #000000;
+  --color-text-critical: #000000;
+
+  /**
+  BORDER
+  **/
+  --color-border-1: rgba(128, 128, 128, 0.8);
+  --color-border-2: rgba(208, 208, 208, 0.8);
+
+  /**
+  NEUTRALS
+  **/
+  --color-neutral-0: #ffffff;
+  --color-neutral-0-reverse: #000000;
+  --color-neutral-1: #f5f5f5;
+  --color-neutral-2: #ededed;
+  --color-neutral-3: #e7e7e7;
+
+  /**
+  STATUS
+  **/
+  --color-status-ready: #7ed320;
+  --color-status-offline: #ada7a8;
+  --color-status-busy: #f19b53;
+
+  /**
+  BACKGROUNDS
+  **/
+  --color-background-overlay: rgba(23, 10, 122, 0.4);
+  --color-background-subtle-callout: #efefef;
+  --color-background-modal-overlay: rgba(0, 0, 0, 0.3);
+  --color-background-neutral-0: #ffffff;
+  --color-background-reverse: #000000;
+  --color-background-reverse-alt: #262626;
+  --color-background-critical: #f9e1e5;
+  --color-background-chat-outgoing: #e8e8e8;
+  --color-background-chat-incomming: #000000;
+
+  /**
+  MENU
+  **/
+  --color-interactions-menu: #000000;
+  --color-interactions-menu-hover: #2f2f2f;
+  --color-interactions-menu-inactive: #757575;
+
+  --button-border-radius: 10px;
+
+  /**
+  LAYOUT
+  **/
+
+  --max-container-width: 1800px;
+
+  /**
+  BADGE
+  **/
+  --badge-line-height: 26px;
+}

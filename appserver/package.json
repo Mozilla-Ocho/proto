@@ -9,18 +9,32 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^0.0.40",
+    "@ai-sdk/react": "^0.0.31",
+    "@ai-sdk/ui-utils": "^0.0.21",
+    "@auth0/nextjs-auth0": "^3.5.0",
     "@types/node": "18.15.11",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "ai": "^3.2.40",
     "autoprefixer": "10.4.14",
+    "axios": "^1.7.2",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "knex": "^2.4.2",
     "next": "14.1.1",
+    "openai": "^4.53.2",
     "pg": "^8.10.0",
+    "pgvector": "^0.2.0",
     "postcss": "8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.4"
+    "react-element-forge": "0.0.7",
+    "react-markdown": "^9.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "sass": "^1.77.8",
+    "typescript": "5.0.4",
+    "zod": "^3.23.8"
   }
 }

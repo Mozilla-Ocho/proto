@@ -1,6 +1,9 @@
-const config = {
-  client: "pg",
-  connection: process.env.DATABASE_URL,
-};
+const { pgvector } = require('pgvector/knex')
 
-module.exports = config;
+const config = {
+  client: 'pg',
+  connection: process.env.DATABASE_URL,
+  ...pgvector,
+}
+
+module.exports = config
