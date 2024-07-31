@@ -35,7 +35,7 @@ export type NavigationLinkBlockT = {
 }
 
 // Github
-export interface GithubRepositoryT {
+export type GithubRepositoryT = {
   id: number
   name: string
   full_name: string
@@ -59,14 +59,14 @@ export interface GithubRepositoryT {
   default_branch: string
 }
 
-export interface GithubOwnerT {
+export type GithubOwnerT = {
   login: string
   id: number
   avatar_url: string
   html_url: string
 }
 
-export interface GithubContributorT {
+export type GithubContributorT = {
   login: string
   id: number
   avatar_url: string
@@ -74,7 +74,7 @@ export interface GithubContributorT {
   contributions: number
 }
 
-export interface GithubIssueT {
+export type GithubIssueT = {
   id: number
   number: number
   title: string
@@ -88,14 +88,14 @@ export interface GithubIssueT {
   body: string
 }
 
-export interface GithubUserT {
+export type GithubUserT = {
   login: string
   id: number
   avatar_url: string
   html_url: string
 }
 
-export interface GithubPullRequestT {
+export type GithubPullRequestT = {
   id: number
   number: number
   state: string
@@ -108,7 +108,7 @@ export interface GithubPullRequestT {
   merged_at: string | null
 }
 
-export interface GithubBranchT {
+export type GithubBranchT = {
   name: string
   commit: {
     sha: string
@@ -117,7 +117,7 @@ export interface GithubBranchT {
   protected: boolean
 }
 
-export interface GithhubTagT {
+export type GithhubTagT = {
   name: string
   commit: {
     sha: string
@@ -127,7 +127,7 @@ export interface GithhubTagT {
   tarball_url: string
 }
 
-export interface GithubContentT {
+export type GithubContentT = {
   name: string
   path: string
   sha: string
@@ -139,7 +139,7 @@ export interface GithubContentT {
   type: string
 }
 
-export interface GithubCommitT {
+export type GithubCommitT = {
   sha: string
   node_id: string
   commit: {
