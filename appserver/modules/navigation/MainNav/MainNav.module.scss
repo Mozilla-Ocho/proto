@@ -1,4 +1,4 @@
-@use "styles/core/boilerplate" as *;
+@use 'styles/core/boilerplate' as *;
 
 .main_nav {
   width: 100%;
@@ -73,7 +73,6 @@
 .banner {
   &_gradient {
     padding: 4px 12px;
-    background: $gradient-warm;
   }
 
   &_text {

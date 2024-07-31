@@ -1,11 +1,12 @@
 {
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -25,27 +26,13 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@Shared/*": [
-        "components/shared/*"
-      ],
-      "@Navigation/*": [
-        "modules/navigation/*"
-      ],
-      "@Modules/*": [
-        "modules/*"
-      ],
-      "@Modals/*": [
-        "modals/*"
-      ]
+      "@Shared/*": ["components/shared/*"],
+      "@Navigation/*": ["modules/navigation/*"],
+      "@Modules/*": ["modules/*"],
+      "@Modals/*": ["modals/*"],
+      "@Services/*": ["services/*"]
     }
   },
-  "include": [
-    "appserver/**/*.ts",
-    "appserver/**/*.tsx",
-    "next-env.d.ts",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }

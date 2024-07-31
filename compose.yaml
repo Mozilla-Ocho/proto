@@ -24,7 +24,7 @@ services:
         condition: service_healthy
 
   pgserver:
-    image: "postgres:14"
+    image: pgvector/pgvector:pg14
     networks:
       - allhosts
     environment:

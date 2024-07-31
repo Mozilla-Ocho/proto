@@ -1,0 +1,8 @@
+@use 'styles/core/boilerplate' as *;
+
+.messages_wrapper {
+  height: calc(100vh - 440px);
+  margin-bottom: 40px;
+  overflow-y: scroll;
+  padding: 12px;
+}

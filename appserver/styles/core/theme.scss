@@ -22,6 +22,7 @@
   **/
   --copy-button-font-size: 0.875rem;
   --copy-button-font-weight: 500;
+  --copy-button-text-color: var(--color-text-main);
 
   /**
   CHECKBOX
@@ -36,7 +37,7 @@
   --input-label-font-weight: 600;
   --input-font-size: 0.875rem;
   --input-info-font-size: 0.875rem;
-  --input-border-radius: 12px;
+  --input-border-radius: 4px;
   --input-padding: 12px;
 
   /**
@@ -74,67 +75,6 @@
   --tooltip-width: 250px;
 }
 
-div[data-theme="buzz"] {
-  --font-primary: var(--inter-font);
-  --font-seondary: var(--space_grotesk-font);
-  --font-secondary: var(--space_grotesk-font);
-  --color-interaction-primary: #e36d28;
-  --color-interaction-primary-hover: #aa4810;
-
-  --color-background-neutral-0: #101010;
-
-  --color-neutral-0: #101010;
-
-  --color-text-main: #bcbcbc;
-
-  --color-background-subtle-callout: #2d2d2d;
-
-  --color-border-1: #272727;
-
-  --button-border-radius: 10px;
-}
-
-div[data-theme="chat"] {
-  --font-primary: var(--inter-font);
-  --font-seondary: var(--space_grotesk-font);
-  --font-secondary: var(--space_grotesk-font);
-
-  --color-interaction-primary: #00de9b;
-  --color-interaction-primary-active: #00de9b;
-  --color-interaction-primary-hover: rgb(104, 199, 105);
-  --color-logo: rgb(93, 135, 89);
-
-  --color-background-neutral-0: #242f37;
-
-  --color-background-overlay: #181717;
-
-  --color-neutral-0: #101010;
-
-  --color-text-main: #f3f3f3;
-  --color-text-reverse: #101010;
-
-  --color-background-subtle-callout: #162129;
-
-  --color-border-1: #878787;
-
-  --button-border-radius: 10px;
-
-  /**
-  BUTTONS
-  **/
-  --button-font-size: 0.875rem;
-  --button-font-weight: 500;
-  --button-border-stroke: 2px;
-  --button-border-radius: 6px;
-  --button-padding-large: 12px 18px;
-  --button-padding-large-round: 12px;
-  --button-padding-medium: 4px 8px;
-  --button-padding-medium-round: 4px;
-  --button-padding-small: 6px 12px;
-  --button-padding-small-round: 6px;
-}
-
-main[data-theme="zebra"],
 :root {
   --font-primary: var(--inter-font);
   --font-seondary: var(--space_grotesk-font);
@@ -148,7 +88,7 @@ main[data-theme="zebra"],
   /**
   PRIMARY INTERACTION
   **/
-  --color-interaction-primary: #8912c9;
+  --color-interaction-primary: #1969a6;
   --color-interaction-primary-hover: #170696;
   --color-interaction-primary-active: #170696;
   --color-interaction-primary-disabled: rgba(176, 176, 176, 0.5);
@@ -210,8 +150,8 @@ main[data-theme="zebra"],
   /**
   BORDER
   **/
-  --color-border-1: #e6e6e6;
-  --color-border-2: #cacaca;
+  --color-border-1: rgba(128, 128, 128, 0.8);
+  --color-border-2: rgba(208, 208, 208, 0.8);
 
   /**
   NEUTRALS
@@ -233,14 +173,14 @@ main[data-theme="zebra"],
   BACKGROUNDS
   **/
   --color-background-overlay: rgba(23, 10, 122, 0.4);
-  --color-background-subtle-callout: #e8effd;
+  --color-background-subtle-callout: #efefef;
   --color-background-modal-overlay: rgba(0, 0, 0, 0.3);
   --color-background-neutral-0: #ffffff;
   --color-background-reverse: #000000;
   --color-background-reverse-alt: #262626;
   --color-background-critical: #f9e1e5;
-  --color-background-chat-outgoing: #1b85ee;
-  --color-background-chat-incomming: #242f37;
+  --color-background-chat-outgoing: #e8e8e8;
+  --color-background-chat-incomming: #000000;
 
   /**
   MENU

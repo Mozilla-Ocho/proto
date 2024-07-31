@@ -1,22 +1,21 @@
-import { useCallback, useState } from "react";
-import styles from "./MainNav.module.scss";
-import { Button, Icon, Modal, LinkComponentT } from "react-element-forge";
-import { NavigationT } from "types";
-import Link from "next/link";
-import { Claims } from "@auth0/nextjs-auth0";
+import styles from './MainNav.module.scss'
+import { Button, Icon, Modal, LinkComponentT } from 'react-element-forge'
+// import { NavigationT } from 'types'
+import Link from 'next/link'
+import { Claims } from '@auth0/nextjs-auth0'
 
 type MainNavPropsT = {
-  navData?: NavigationT;
-  mobileMenuClick?: () => void;
-  user?: Claims;
-  className?: string;
-};
+  // navData?: NavigationT
+  mobileMenuClick?: () => void
+  user?: Claims
+  className?: string
+}
 
 const MainNav = ({
-  navData,
+  // navData,
   mobileMenuClick,
   user,
-  className = "",
+  className = '',
 }: MainNavPropsT) => {
   return (
     <>
@@ -69,7 +68,7 @@ const MainNav = ({
         </div>
       </nav>
     </>
-  );
-};
+  )
+}
 
-export default MainNav;
+export default MainNav

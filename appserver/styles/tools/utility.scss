@@ -112,10 +112,6 @@
   background: $color-background-neutral-0;
 }
 
-.background-rainbow {
-  background: $gradient-rainbow;
-}
-
 // ---------------------------------
 //   Visibility
 // ---------------------------------
@@ -270,8 +266,15 @@
   }
 }
 
+.grow {
+  flex-grow: 1;
+}
 .flex {
-  &-column {
+  display: flex;
+  &-wrap {
+    flex-wrap: wrap;
+  }
+  &-col {
     display: flex;
 
     flex-direction: column;

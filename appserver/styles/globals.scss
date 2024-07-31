@@ -1,15 +1,15 @@
-@use "./core/boilerplate.scss" as *;
-@use "./core/theme.scss" as *;
-@use "./tools/utility.scss" as *;
+@use './core/boilerplate.scss' as *;
+@use './core/theme.scss' as *;
+@use './tools/utility.scss' as *;
 
 html,
 body {
   @include primary-font();
   padding: 0;
   margin: 0;
-  font-size: 16px;
-  color: $color-text-reverse;
-  background-color: $color-background-reverse-alt;
+  font-size: $font-size-base;
+  color: $color-text-main;
+  background-color: $color-background-neutral-0;
 }
 
 a {
@@ -45,28 +45,55 @@ button {
 GLOBAL PAGE STYLES
 **/
 .page_wrapper {
+  border: 1px solid $color-border-2;
+  border-radius: 4px;
+  margin: 40px 40px 40px 0;
+  padding: 40px;
   display: flex;
-  flex: 1;
   flex-direction: column;
-  min-height: calc(100vh - 532px);
-  margin-top: 80px;
+  min-height: calc(100vh - 80px);
+  @include font-size(14);
+}
+
+.card {
+  border: 1px solid $color-border-2;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px 0;
 }
 
 hr {
   border: none;
   height: 2px;
-  background: $gradient-rainbow;
   margin: 20px auto;
 }
 
 .markdown {
   h1 {
     @include heading-md;
-    margin-bottom: 12px;
+    margin-top: 12px;
+    margin-bottom: 24px;
   }
   h2 {
+    @include heading-xs;
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+  h3 {
     @include heading-xxs;
-    margin-bottom: 12px;
-    // line-height: px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+  p {
+    @include paragraph-sm;
+  }
+  a {
+    color: $color-interaction-primary;
+    @include font-size(14);
+  }
+
+  code {
+    background-color: black;
+    color: white;
   }
 }

@@ -1,10 +1,14 @@
 // -----------------
 //   Font Setup
 // -----------------
-$font-size-base: 16; // base size in px
+$font-size-base: 16px; // base font, note this system runs on REMs
+$font-size-md: 14; // medium size in px
+$font-size-sm: 12; // small size in px
+$font-size-lg: 16; // large size in px
+
 $primary-font: var(--inter-font);
 $secondary-font: var(--space_grotesk-font);
-$backup-font: "Times New Roman";
+$backup-font: 'Times New Roman';
 
 /**
   BRAND COLORS
@@ -136,45 +140,6 @@ $color-interactions-menu-inactive: var(--color-interactions-menu-inactive);
 **/
 $max-container-width: var(--max-container-width);
 
-// ---- Primary Brand Colors ---------------------
-$black: #231f20;
-$dark-teal: #1c7f8d;
-$blue: #0d73a6;
-$light-blue: #e0f5ff;
-$link-blue: #007ab8;
-$purple: #663df5;
-$gradient-warm: linear-gradient(270deg, #ff806f 0%, #ffff98 100%);
-$gradient-rainbow: linear-gradient(
-  107.97deg,
-  #489cbe 6.73%,
-  #5427c9 39.4%,
-  #a8527c 77.18%,
-  #a67878 104.75%
-);
-$gradient-cool: linear-gradient(90deg, #6ae1d9 0%, #9898ff 100%);
-
-// ---- Accent Colors ---------------------
-$teal: #23a2b3;
-$light-teal: rgba($teal, 0.1);
-$pink: #d83a94;
-$blue-neon: #4d4dff;
-$yellow-neon: #f1ea57;
-$peach: #d96868;
-$tan: #e5dfd8;
-
-// ---- Utility Colors  ---------------------
-$white: #ffffff;
-$off-white: #ddd;
-$grey: #868686;
-$accent-grey: #e0e0e0;
-$form-gray: #c9c9c9;
-$semi-dark-grey: #767474;
-$dark-grey: #393536;
-$red: #d42828;
-$green: #3dc278;
-$loading-grey: #f8f8f8;
-$light-grey: #f5f5f5;
-
 // ---- Break Points ---------------------
 $breakpoint-mobile: 580px;
 $breakpoint-tablet: 768px;
@@ -185,6 +150,6 @@ $breakpoint-hd: 1312px;
 $container-max-width: 1200px;
 
 // ---- Misc ---------------------
-$drop-shadow: 0 3px 8px rgba($black, 0.3);
-$drop-shadow-right: 3px 3px 8px rgba($black, 0.3);
-$drop-shadow-light: 0 3px 8px rgba($black, 0.05);
+$drop-shadow: 0 3px 8px rgba(#231f20, 0.3);
+$drop-shadow-right: 3px 3px 8px rgba(#231f20, 0.3);
+$drop-shadow-light: 0 3px 8px rgba(#231f20, 0.05);
